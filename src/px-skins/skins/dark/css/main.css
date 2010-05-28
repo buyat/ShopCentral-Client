@@ -1,0 +1,376 @@
+/*
+
+DARK
+
+*/
+/* #############
+LAYOUT AND BASIC SETUP
+############# */
+body {
+text-align:center; /* Centre for IE 6 */
+margin:0px;
+}
+
+
+#header, #content{
+width:780px;
+text-align:left;
+margin:0 auto; /* Centre for good browsers */ 
+}
+
+#content {
+width:816px;
+background:#fff url(../images/sprite.gif) -0px -222px no-repeat;
+position:relative; /* so we can use position:absolute on the buy.at notice */
+top:-12px;
+}
+
+p, #pagination {
+font-family:verdana, Arial, Helvetica, sans-serif;
+}
+
+p.introduction {
+font:1em/160% verdana, arial, sans-serif;
+margin:0px 54px;
+}
+
+h1 {
+font:bold 1.929em "Century Gothic", verdana, sans-serif;
+margin:12px;
+}
+
+h1 a {
+text-decoration:none;
+color:#C00;
+}
+
+h2 {
+font:bold 1.1667em/1.286em verdana, arial, sans-serif;
+margin:1.929em 54px  0.643em 54px;
+}
+
+/* #############
+END LAYOUT AND BASIC SETUP
+############# */
+
+/* #############
+SEARCH FORM
+############# */
+
+form {
+text-align:center;
+padding:10px;
+}
+
+#search {
+background:#fff url(../images/sprite.gif) 0px -48px repeat;
+width:240px;
+}
+#search, select {
+border:1px solid #ccc;
+font-size: 1.1667em;
+}
+#search:active, #search:focus,  select:active, select:focus {
+background-image:none;
+border-color:#C00;
+}
+
+#content .button {
+font-size:1.1em;
+}
+
+/* #############
+END SEARCH FORM
+############# */
+
+/* #############
+NAVIGATION BAR
+############# */
+#navigation {
+width:100%;
+height:50px;
+text-align:center;
+background:#fff url(../images/sprite.gif) top left repeat-x;
+font:normal 0.75em verdana, arial, sans-serif;
+padding-left:0px;
+
+}
+#navigation li{
+display:inline;
+margin:0px;
+position:relative;
+bottom:-14px;
+}
+#navigation li a {
+color:#fff;
+font-weight:bold;
+text-decoration:none;
+padding:12px 6px 14px 6px;
+margin:0px 2px; 
+}
+
+#navigation li.on  a, #navigation li a:hover, #navigation li a:active, #navigation li a:focus {
+color:#000;
+background:#EFEFEF;
+border:1px solid #ccc;
+margin:1px;
+-moz-border-radius: 3px; /* firefox */
+-webkit-border-radius: 3px; /* safari/chrome */
+border-radius: 3px; /* future proofing */
+
+}
+
+/* #############
+END NAVIGATION BAR
+############# */
+
+/* #############
+PAGINATION
+############# */
+
+#content ol#pagination {	
+padding:10px 20px 15px 0px;
+text-align:right;
+font-size:0.8333em;
+width:780px;
+clear:both;
+margin-top:-8px;
+}
+
+#content ol#pagination li{
+display:inline;
+border:0px;
+background-color:transparent;
+margin:0px;
+padding-right:3px;
+padding-left:0px;
+}
+
+#content ol#pagination li:last-child {
+border:0px;
+}
+
+/* #############
+END PAGINATION
+############# */
+
+/* #############
+PRODUCT LISTINGS
+############# */
+
+#content ol{
+background-color:#efefef;
+width:800px;
+margin:24px 0px 0px 8px;
+padding-left:0px;
+}
+
+#content ol li, #productdetail{
+display:block;
+border:1px solid #ccc;
+background-color:#fff;
+margin:8px 18px;
+height:134px;
+padding-left:144px;
+position:relative;
+-moz-border-radius: 6px; /* firefox */
+-webkit-border-radius: 6px; /* safari/chrome */
+border-radius: 6px; /* future proofing */
+list-style:none;
+
+overflow:hidden;
+}
+
+#productdetail {
+width:618px;
+height:auto;
+float:right;
+display:inline;
+clear:right;
+margin-top:19px;
+padding-bottom:24px;
+margin-right:25px;
+}
+
+#content #productdetail p {
+line-height:2em;
+}
+
+
+#content ol li img ,  #productdetail img{
+margin:12px;
+float:left;
+clear:none;
+display:block;
+position:absolute;
+left:24px;
+border:0px;
+padding:4px;
+border:1px solid #ccc;
+max-width:80px;
+}
+
+#content ol li h3,  #productdetail h3{
+margin-top:20px;
+font:bold italic 0.8em "Century Gothic", verdana, sans-serif;
+margin-bottom:2px;
+}
+
+#content ol li h3 a ,  #productdetail h3 a{
+color:#323333;
+text-decoration:none;
+padding-right:20px;
+background:#fff url(../images/sprite.gif) right -203px no-repeat;
+}
+
+#content ol li h3 a:hover, #content ol li h3 a:active, #content ol li h3 a:focus {
+background:#fff url(../images/sprite.gif) right -188px no-repeat;
+color:#999;
+}
+
+#content ol li p.price,  #productdetail p.price{
+color:#424B55;
+font:bold italic 0.9em "Century Gothic", verdana, sans-serif;
+margin:0px;
+margin-bottom:2px;
+}
+
+#content ol li p ,  #productdetail p{
+font:0.7em/140% verdana, arial, sans-serif;
+color:#333;
+margin:0px 0px 3px;	
+padding-right:20px;
+}
+
+#content ol li ul,  #productdetail li ul{
+font:0.7em/140% verdana, arial, sans-serif;
+padding-left:0px;
+}
+
+#content ol li ul li, #productdetail ul li {
+display:inline;
+border:0px;
+padding:0px;
+margin:0 5px 0 0;
+}
+
+.more {
+padding-left:8px;
+padding-right:16px;
+margin-left:3px;
+border-left:1px solid #ccc;
+color:#CF7D02;
+}
+
+#content ol li ul li a:hover, #content ol li ul li a:active, #content ol li ul li a:focus {
+color:#323333;
+}
+
+#content a.back {
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:0.8em;
+	float:right;
+	margin-right:25px;
+	padding-top:20px;
+	font-weight:700;
+}
+
+/* #############
+END PRODUCT LISTINGS
+############# */
+
+/* #############
+BUY.AT NOTICE 
+############# */
+
+#copy {
+clear:both;
+background:#fff url(../images/sprite.gif) -22px -71px no-repeat;
+font-size:0.7em;
+height:24px;
+text-align:right;
+margin:0px 8px;
+padding-top:8px;
+padding-right:60px;
+border-top:1px solid #CCC;
+}
+
+#copy a {
+color:#323333;
+text-decoration:none;
+}
+/* #############
+END BUY.AT NOTICE 
+############# */
+
+/* #############
+LIGHTBOX 
+############# */
+
+#lightbox{
+	display:none;
+	position: absolute;
+	top:50%;
+	left:50%;
+	z-index:9999;
+	width:605px;
+	height:auto;
+	margin:-220px 0 0 -250px;
+  border:5px solid #323333;
+	background:#FDFCE9;
+	text-align:left;
+  padding: 5px;
+  text-align:left;
+
+}
+
+#lightbox #productdetail {
+	width:auto;
+}
+
+#lightbox[id]{
+	position:fixed;
+}
+
+#overlay{
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:5000;
+	background-color:#000;
+	-moz-opacity: 0.6;
+	opacity:.60;
+	filter: alpha(opacity=60);
+	  text-align:left;
+
+}
+#overlay[id]{
+	position:fixed;
+}
+
+#lightbox.done #lbLoadMessage{
+	display:none;
+
+}
+#lightbox.done #lbContent{
+	display:block;
+}
+#lightbox.loading #lbContent{
+	display:none;
+}
+#lightbox.loading #lbLoadMessage{
+	display:block;
+	font-size:80%;
+	text-decoration: blink;
+}
+
+.close {
+position:absolute;
+top:3px;
+right:6px;
+font:80% verdana, arial, sans-serif;
+color:#333;
+}

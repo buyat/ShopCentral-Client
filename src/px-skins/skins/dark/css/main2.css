@@ -1,0 +1,253 @@
+/*
+
+BLUE
+
+*/
+/* #############
+LAYOUT AND BASIC SETUP
+############# */
+body {
+text-align:center; /* Centre for IE 6 */
+}
+
+
+#header, #content{
+width:780px;
+text-align:left;
+margin:0 auto; /* Centre for good browsers */ 
+}
+
+
+#content {
+width:816px;
+background:#fff url(../images/sprite.gif) -0px -222px no-repeat;
+position:relative; /* so we can use position:absolute on the buy.at notice */
+top:-12px;
+}
+
+
+
+.introduction {
+font:1em/160% verdana, arial, sans-serif;
+margin:0px 54px;
+}
+
+h1 {
+font:bold 1.929em "Century Gothic", verdana, sans-serif;
+margin:12px;
+}
+
+h1 a {
+text-decoration:none;
+color:#DE8807;
+}
+
+h2 {
+font:bold 1.1667em/1.286em verdana, arial, sans-serif;
+margin:1.929em 54px  0.643em 54px;
+}
+
+/* #############
+END LAYOUT AND BASIC SETUP
+############# */
+
+/* #############
+SEARCH FORM
+############# */
+
+form {
+text-align:center;
+padding:10px;
+}
+
+#search {
+background:#fff url(../images/sprite.gif) 0px -51px repeat;
+width:240px;
+}
+#search, select {
+border:1px solid #ccc;
+font-size: 1.1667em;
+}
+#search:active, #search:focus,  select:active, select:focus {
+background-image:none;
+border-color:#7FD34D;
+}
+
+/* #############
+END SEARCH FORM
+############# */
+
+/* #############
+NAVIGATION BAR
+############# */
+#navigation {
+width:100%;
+height:50px;
+text-align:center;
+background:#fff url(../images/sprite.gif) top left repeat-x;
+}
+#navigation li{
+display:inline;
+margin:0px;
+position:relative;
+bottom:-14px;
+}
+#navigation li a {
+color:#fff;
+font-weight:bold;
+text-decoration:none;
+padding:12px 14px 14px 14px;
+margin:0px 2px; 
+}
+
+#navigation li.on  a, #navigation li a:hover, #navigation li a:active, #navigation li a:focus {
+color:#000;
+background:#EFEFEF;
+border:1px solid #ccc;
+margin:1px;
+-moz-border-radius: 3px; /* firefox */
+-webkit-border-radius: 3px; /* safari/chrome */
+border-radius: 3px; /* future proofing */
+
+}
+
+/* #############
+END NAVIGATION BAR
+############# */
+
+/* #############
+PAGINATION
+############# */
+
+#content ol#pagination {
+border-bottom:1px solid #ccc;
+padding-bottom:24px;
+text-align:right;
+font-size:0.8333em;
+width:740px;
+padding-right:62px;
+}
+
+#content ol#pagination li{
+display:inline;
+border:0px;
+padding:0px;
+margin:0px;
+background-color:transparent;
+}
+
+/* #############
+END PAGINATION
+############# */
+
+/* #############
+PRODUCT LISTINGS
+############# */
+
+#content ol{
+background-color:#efefef;
+width:800px;
+margin:24px 0px 0px 8px;
+}
+
+#content ol li{
+display:block;
+border:1px solid #ccc;
+background-color:#fff;
+margin:8px 18px;
+height:134px;
+padding-left:144px;
+position:relative;
+-moz-border-radius: 6px; /* firefox */
+-webkit-border-radius: 6px; /* safari/chrome */
+border-radius: 6px; /* future proofing */
+}
+
+#content ol li img {
+margin:12px;
+float:left;
+clear:none;
+display:block;
+position:absolute;
+left:24px;
+border:0px;
+padding:4px;
+border:1px solid #ccc;
+}
+
+#content ol li h3{
+margin-top:20px;
+font:bold italic 1.1667em "Century Gothic", verdana, sans-serif;
+}
+
+#content ol li h3 a{
+color:#323333;
+display:block;
+text-decoration:none;
+padding-right:16px;
+background:#fff url(../images/sprite.gif) -70px -202px no-repeat;
+}
+
+#content ol li h3 a:hover, #content ol li h3 a:active, #content ol li h3 a:focus {
+background:#fff url(../images/sprite.gif) -70px -187px no-repeat;
+color:#999;
+}
+#content ol li p.price{
+color:#DE8807;
+font:bold italic 1.1667em "Century Gothic", verdana, sans-serif;
+}
+
+#content ol li p  {
+font:0.8333em/140% verdana, arial, sans-serif;
+color:#333;
+}
+
+#content ol li ul{
+font:0.8333em/140% verdana, arial, sans-serif;
+}
+
+#content ol li ul li {
+display:inline;
+margin:0px;
+border:0px;
+padding:0px;
+}
+
+.more {
+padding-left:8px;
+padding-right:16px;
+margin-left:3px;
+border-left:1px solid #ccc;
+color:#CF7D02;
+}
+
+#content ol li ul li a:hover, #content ol li ul li a:active, #content ol li ul li a:focus {
+color:#323333;
+}
+
+/* #############
+END PRODUCT LISTINGS
+############# */
+
+/* #############
+BUY.AT NOTICE 
+############# */
+
+#copy {
+position:absolute;
+bottom:-34px;
+right:4px;
+width:144px;
+padding-right:26px;
+background:#fff url(../images/sprite.gif) -650px -76px no-repeat;
+font-size:0.8333em;
+height:24px;
+}
+
+#copy a {
+color:#323333;
+text-decoration:none;
+}
+/* #############
+END BUY.AT NOTICE 
+############# */
